@@ -1,26 +1,20 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Primary Meta Tags -->
-<meta name="description" content="Custom cakes, pastries, and treats by Serena Cakes and Edibles. Order custom birthday, wedding, and event cakes online.">
-<meta name="keywords" content="cakes in Ibadan, custom cakes, wedding cakes, bento cakes, cupcakes, pastries, Serena Cakes">
-
-<!-- Open Graph / WhatsApp / Facebook Link Preview -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Serena Cakes and Edibles | Custom Cakes & Pastries">
-<meta property="og:description" content="Freshly baked custom cakes for all celebrations. Chat directly with us on WhatsApp to order!">
-<meta property="og:image" content="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=600&q=80">
-<meta property="og:url" content="https://serenacakes.com">
-
-<!-- Twitter Card Preview -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Serena Cakes and Edibles">
-<meta name="twitter:description" content="Freshly baked custom cakes for all celebrations. Order on WhatsApp!">
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=600&q=80">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Serena Cakes and Edibles | Custom Cakes & Pastries</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="description" content="Custom cakes, pastries, and treats by Serena Cakes and Edibles. Order custom birthday, wedding, and event cakes online.">
+  <meta name="keywords" content="cakes in Ibadan, custom cakes, wedding cakes, bento cakes, cupcakes, pastries, Serena Cakes">
+
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Serena Cakes and Edibles | Custom Cakes & Pastries">
+  <meta property="og:description" content="Freshly baked custom cakes for all celebrations. Chat directly with us on WhatsApp to order!">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=600&q=80">
+
   <style>
     * {
       box-sizing: border-box;
@@ -28,10 +22,44 @@ DOCTYPE html>
       padding: 0;
       font-family: Arial, sans-serif;
     }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       background-color: #fffafb;
       color: #333;
     }
+    
+    /* Navigation Header */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      z-index: 100;
+    }
+    .logo {
+      font-size: 18px;
+      font-weight: bold;
+      color: #d63384;
+      text-decoration: none;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: 15px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #d63384;
+    }
+
+    /* Hero Section */
     .hero {
       background-color: #fff0f3;
       text-align: center;
@@ -58,6 +86,8 @@ DOCTYPE html>
       font-weight: bold;
       font-size: 14px;
     }
+
+    /* Specialties Grid */
     .specialties {
       padding: 30px 15px;
       text-align: center;
@@ -82,7 +112,6 @@ DOCTYPE html>
       text-align: center;
       padding-bottom: 15px;
     }
-    /* THIS STOPS THE IMAGE FROM ZOOMING OUT */
     .card img {
       width: 100% !important;
       max-width: 100% !important;
@@ -99,27 +128,74 @@ DOCTYPE html>
       font-size: 13px;
       color: #666;
       padding: 0 15px;
-line-height: 1.4;
+      line-height: 1.4;
     }
+
+    /* Call to Action */
     .cta-section {
       background-color: #fff0f3;
       text-align: center;
       padding: 40px 20px;
       margin-top: 30px;
     }
+
+    /* Footer Section */
+    footer {
+      background-color: #222222;
+      color: #ffffff;
+      padding: 30px 20px 20px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .footer-content {
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+    .footer-title {
+      color: #d63384;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .footer-links {
+      margin: 15px 0;
+    }
+    .footer-links a {
+      color: #ff8da1;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+    .copyright {
+      color: #888888;
+      font-size: 12px;
+      border-top: 1px solid #333333;
+      padding-top: 15px;
+      margin-top: 15px;
+    }
   </style>
 </head>
 <body>
+
+  <!-- HEADER NAVIGATION -->
+  <header>
+    <a href="#" class="logo">Serena Cakes</a>
+    <nav>
+      <a href="#specialties">Specialties</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
   <!-- HERO SECTION -->
   <section class="hero">
     <h1>Delicious Custom Cakes & Pastries by Serena Cakes and Edibles</h1>
     <p>Freshly baked for birthdays, weddings, anniversaries, and special events. Made to order with high-quality ingredients.</p>
-    
+    <a href="https://wa.me/2348000000000?text=Hello%20Serena%20Cakes,%20I%20would%20like%20to%20place%20an%20order!" target="_blank" class="btn-whatsapp">Order on WhatsApp</a>
   </section>
 
   <!-- SPECIALTIES GALLERY -->
-  <section class="specialties">
+  <section id="specialties" class="specialties">
     <h2>Our Specialties & Treats</h2>
     <div class="card-grid">
 
@@ -155,38 +231,29 @@ line-height: 1.4;
   </section>
 
   <!-- CTA SECTION -->
-  <section class="cta-section">
+  <section id="contact" class="cta-section">
     <h2>Ready to Order Your Dream Cake?</h2>
-    <a href="https://wa.me/+2349018330723?text=Hello%20Serena%20Cakes,%20I%20would%20like%20to%20place%20an%20order!" target="_blank" class="btn-whatsapp">Order on WhatsApp</a>
     <p style="margin: 10px 0 20px;">Send us your reference picture and order details directly on WhatsApp.</p>
-    <a href="#" class="btn-whatsapp">Chat with Serena</a>
+    <a href="https://wa.me/2348000000000?text=Hello%20Serena%20Cakes,%20I%20have%20an%20inquiry%20about%20a%20custom%20cake!" target="_blank" class="btn-whatsapp">Chat with Serena</a>
   </section>
+
+  <!-- FOOTER SECTION -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-title">Serena Cakes and Edibles</div>
+      <p>Freshly baked custom cakes, pastries, and treats made to order.</p>
+      <p>📍 Delivery available across Ibadan & surrounding areas</p>
+      
+      <div class="footer-links">
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="#contact">Order / Inquiry</a>
+      </div>
+
+      <div class="copyright">
+        &copy; 2026 Serena Cakes and Edibles. All rights reserved.
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
-<!-- HEADER NAVIGATION -->
-<header>
-  <a href="#" class="logo">Serena Cakes</a>
-  <nav>
-    <a href="#specialties">Specialties</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-<!-- FOOTER SECTION -->
-<footer>
-  <div class="footer-content">
-    <div class="footer-title">Serena Cakes and Edibles</div>
-    <p>Freshly baked custom cakes, pastries, and treats made to order.</p>
-    <p>📍 Delivery available across Ibadan & surrounding areas</p>
-    
-    <div class="footer-links">
-      <a href="https://instagram.com/your_handle" target="_blank">Instagram</a>
-      <a href="#contact">Order / Inquiry</a>
-    </div>
-
-    <div class="copyright">
-      &copy; 2026 Serena Cakes and Edibles. All rights reserved.
-    </div>
-  </div>
-</footer>
-
